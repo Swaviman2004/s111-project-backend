@@ -39,7 +39,7 @@ public class OurstoreBackendApplication extends SpringBootServletInitializer {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**")
+                registry.addMapping("/**")  // Changed from /api/** to /** for all paths
                         .allowedOrigins("http://localhost:8082")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
