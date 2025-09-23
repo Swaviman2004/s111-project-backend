@@ -25,13 +25,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @SpringBootApplication
 public class OurstoreBackendApplication extends SpringBootServletInitializer {
 
-    public static void main(String[] args) {
-        SpringApplication.run(OurstoreBackendApplication.class, args);
-    }
-
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
         return builder.sources(OurstoreBackendApplication.class);
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(OurstoreBackendApplication.class, args);
     }
 
     @Bean
